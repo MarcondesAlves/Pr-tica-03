@@ -5,12 +5,9 @@ Esta é uma aplicação web simples desenvolvida com Flask e conectada a um banc
 ## Descrição
 
 A aplicação Flask realiza consultas a um banco de dados PostgreSQL e exibe os resultados na página inicial. 
-
 O projeto utiliza Docker Compose para gerenciar dois serviços:
-
-*web: Serviço que executa a aplicação Flask.
-
-*db: Serviço que executa o banco de dados PostgreSQL.
+* web: Serviço que executa a aplicação Flask.
+* db: Serviço que executa o banco de dados PostgreSQL.
 
 
 ## Estrutura do Projeto
