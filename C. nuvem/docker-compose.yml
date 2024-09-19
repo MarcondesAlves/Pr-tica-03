@@ -1,0 +1,22 @@
+version: '3'
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: clinica_user
+      POSTGRES_PASSWORD: clinica_pass
+      POSTGRES_DB: clinica_db
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+
+  web:
+    build: ./web
+    command: flask run --host=0.0.0.0 --port=5000
+    volumes:
+      - ./web:/usr/src/app
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
