@@ -1,19 +1,28 @@
 ##Aplicação Web na Nuvem com Docker Compose
+
 Esta é uma aplicação web simples desenvolvida com Flask e conectada a um banco de dados PostgreSQL. A aplicação e o banco de dados são orquestrados utilizando Docker Compose e executados em uma instância EC2 na AWS.
 
 ##Descrição
+
 A aplicação Flask realiza consultas a um banco de dados PostgreSQL e exibe os resultados na página inicial. 
 
 O projeto utiliza Docker Compose para gerenciar dois serviços:
+
 *web: Serviço que executa a aplicação Flask.
+
 *db: Serviço que executa o banco de dados PostgreSQL.
 
 
 ##Estrutura do Projeto
+
 ├── app.py                # Código da aplicação Flask 
+
 ├── Dockerfile            # Definição da imagem Docker para a aplicação Flask 
+
 ├── docker-compose.yml    # Configuração do Docker Compose para os serviços
+
 ├── requirements.txt      # Dependências do Python para o Flask 
+
 └── README.md             # Este arquivo
 
 
